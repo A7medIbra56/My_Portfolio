@@ -1,6 +1,7 @@
+import React from "react";
 import "./Home.css";
 
-export default function MyPortfolio() {
+const MyPortfolio: React.FC = () => {
   return (
     <div>
       <div className=" home container-fluid">
@@ -8,10 +9,10 @@ export default function MyPortfolio() {
           <div className="col-md-12">
             <div className="mx-auto p-5">
               <h2 className="pt-3">welcome,</h2>
-              <h2 className="pt-1">I'm Ahmed Ibrahim</h2>
+              <h2 className="pt-1">My Name Ahmed Ibrahim</h2>
               <h4 className="pt-5">
-                I'm a front end Developer who design and develope responsive
-                websites. My expertise is to Create and design websites
+                I front-end Developer who designs and develops responsive
+                websites. My expertise is to create and design websites.
               </h4>
               <div className="cv">
                 <a
@@ -49,4 +50,6 @@ export default function MyPortfolio() {
       </div>
     </div>
   );
-}
+};
+
+export default MyPortfolio;

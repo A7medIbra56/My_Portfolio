@@ -1,6 +1,7 @@
+import React from "react";
 import "./About.css";
 
-export default function About() {
+const About: React.FC = () => {
   return (
     <div className="resume">
       <div className="resume_item resume_about">
@@ -17,8 +18,7 @@ export default function About() {
         </p>
         <p>
           I have strong skills in SEO optimization and performance tuning to
-          achieve the best results in search engines. I also focus on
-          understanding clients' needs and project requirements, ensuring their
+          achieve the best results in search engines. ensuring their
           accurate and efficient implementation.
         </p>
         <p>
@@ -53,4 +53,6 @@ export default function About() {
       </div>
     </div>
   );
-}
+};
+
+export default About;

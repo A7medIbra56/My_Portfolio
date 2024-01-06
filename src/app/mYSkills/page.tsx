@@ -1,7 +1,7 @@
 import React from "react";
 import "./mySkills.css";
 
-export default function MySkill() {
+const MySkill: React.FC = () => {
   return (
     <div className="mySkill">
       <ul className="skills-list group ">
@@ -51,21 +51,13 @@ export default function MySkill() {
         </li>
       </ul>
       <div className="madeHome  mx-auto mt-3 pb-4">
-        <a href="mailto:ahmedibrhiam512@gmail.com">
-          <ion-icon className="me-2" name="logo-google">
-            {" "}
-          </ion-icon>
-        </a>
-        <a href="https://wa.me/01158031289">
-          <ion-icon name="logo-whatsapp"></ion-icon>
-        </a>
-        <a href="http://linkedin.com/in/ahmed-ibrahim-18ab26220">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-        <a href="http://github.com/A7medIbra56">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
+        <a href="mailto:ahmedibrhiam512@gmail.com"></a>
+        <a href="https://wa.me/01158031289"></a>
+        <a href="http://linkedin.com/in/ahmed-ibrahim-18ab26220"></a>
+        <a href="http://github.com/A7medIbra56"></a>
       </div>
     </div>
   );
-}
+};
+
+export default MySkill;
