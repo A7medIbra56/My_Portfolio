@@ -1,19 +1,19 @@
 "use client"
 import React, { useState } from "react";
 import "./Footer.css";
-import Image from "next/image";
-
+import { FaGoogle, FaLinkedin, FaGithub, FaWhatsapp, FaLocationArrow } from "react-icons/fa";
 
 export default function Footer() {
-  let [show, setShow] = useState(null);
-  let [btn1, setBtn1] = useState(null);
-  let [btn2, setBtn2] = useState("d-none");
+  const [show, setShow] = useState<string | null>(null);
+  const [btn1, setBtn1] = useState<string | null>(null);
+  const [btn2, setBtn2] = useState<string>("d-none");
 
   function WorkBtn1() {
     setShow("d-block");
     setBtn1("d-none");
     setBtn2("d-block");
   }
+
   function WorkBtn2() {
     setShow("d-none");
     setBtn1("d-block");
@@ -25,17 +25,12 @@ export default function Footer() {
       <div className="col-md-12 main ">
         <header>
           <div className="mt-5 d-flex justify-content-center align-items-center">
-          <img
-          src="./img/ahmed2.png"
-          className="w-50 rounded-2"
-          alt="..."
-          
-          />
+            <img src={`./img/ahmed2.png`} className="w-50 rounded-2" alt="..." />
             <h2>AHMED IBRAHIM</h2>
           </div>
         </header>
       </div>
-      {/*btn Show*/}
+      {/* btn Show */}
       <div className={`down text-center mt-3 ${btn1}`}>
         <a
           href="#aboutme"
@@ -45,10 +40,10 @@ export default function Footer() {
         >
           <i className="fa fa-angle-double-down"></i>
           <br />
-          Show Detials
+          Show Details
         </a>
       </div>
-      {/*btn hide*/}
+      {/* btn hide */}
       <div className={`down text-center mt-3 ${btn2}`}>
         <a
           href="#aboutme"
@@ -58,7 +53,7 @@ export default function Footer() {
         >
           <i className={`fa fa-angle-double-up`}></i>
           <br />
-          Hide Detials
+          Hide Details
         </a>
       </div>
       <div id="#aboutme" className={`ShowHide ${show}`}>
@@ -68,8 +63,8 @@ export default function Footer() {
         <div className={`smallScr `}>
           <div className="made">
             <div className="madeItem d-flex">
-              <div>
-                <i className="fa-solid fa-location-dot"></i>{" "}
+              <div className={'madeFa'}>
+                <FaLocationArrow/>
               </div>
               <div>
                 <a href="tel:#">
@@ -80,8 +75,8 @@ export default function Footer() {
           </div>
           <div className="made">
             <div className="madeItem d-flex">
-              <div>
-                <i className="fa-brands fa-google"></i>
+              <div className={'madeFa'}>
+                <FaGoogle/>
               </div>
               <div>
                 <a href="mailto:ahmedibrhiam512@gmail.com">
@@ -92,8 +87,8 @@ export default function Footer() {
           </div>
           <div className="made">
             <div className="madeItem d-flex">
-              <div>
-                <i className="fa-brands fa-linkedin"></i>
+              <div className={'madeFa'}>
+                <FaLinkedin/>
               </div>
               <div>
                 <a href="linkedin.com/in/ahmed-ibrahim-🇵🇸-18ab26220">
@@ -104,8 +99,8 @@ export default function Footer() {
           </div>
           <div className="made">
             <div className="madeItem d-flex">
-              <div>
-                <i className="fa-brands fa-whatsapp"></i>
+              <div className={'madeFa'}>
+                <FaWhatsapp />
               </div>
               <div>
                 <a href="tel:01158031289">
@@ -114,20 +109,30 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="madeSO mx-auto g-2">
-            <a href="mailto:ahmedibrhiam512@gmail.com">
-              <i className="fa-brands fa-google"></i>
-            </a>
-            <a href="https://wa.me/01158031289">
-              <i className="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="http://linkedin.com/in/ahmed-ibrahim-18ab26220">
-              <i className="fa-brands fa-linkedin"></i>
-            </a>
+          <div className="wrapper">
+        <ul>
+          <li className="github">
             <a href="http://github.com/A7medIbra56">
-              <i className="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github" aria-hidden="true"></i>
             </a>
-          </div>
+          </li>
+          <li className="linkedin">
+            <a href="http://linkedin.com/in/ahmed-ibrahim-18ab26220">
+              <i className="fa-brands fa-linkedin " aria-hidden="true"></i>
+            </a>
+          </li>
+          <li className="google">
+            <a href="mailto:ahmedibrhiam512@gmail.com">
+              <i className="fa-brands fa-google " aria-hidden="true"></i>
+            </a>
+          </li>
+          <li className="whatsapp">
+            <a href="https://wa.me/01158031289">
+              <i className="fa-brands fa-whatsapp " aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
         </div>
       </div>
     </div>

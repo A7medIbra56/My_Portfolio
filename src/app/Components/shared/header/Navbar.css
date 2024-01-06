@@ -10,8 +10,8 @@
   right: 0;
   width: auto;
   height: 70px;
-  background-image: linear-gradient(117deg, hsl(21, 100%, 59%,1), hsla(21, 100%, 59%,1));
   display: flex;
+  background-color: rgb(22, 25, 25);
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -19,14 +19,12 @@
 
 .navigation ul {
   display: flex;
-  background-image: linear-gradient(117deg, hsl(21, 100%, 59%,1), hsla(21, 100%, 59%,1));
 }
 
 .navigation ul li {
   position: relative;
   width: 70px;
   height: 70px;
-  background-image: linear-gradient(117deg, hsl(21, 100%, 59%,1), hsla(21, 100%, 59%,1));
   list-style: none;
   z-index: 1;
 }
@@ -38,18 +36,20 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-image: linear-gradient(117deg, hsl(21, 100%, 59%,1), hsla(21, 100%, 59%,1));
   font-weight: 500;
 }
 
 .icon {
   position: relative;
+  padding-top: 15px;
   display: block;
   line-height: 75px;
   font-size: 1.5em;
   text-align: center;
-  color: #952f2f;
+  z-index: 9999999999;
+  color: #ffffff;
   transition: 0.5s;
+
 }
 
 .navigation ul li.active a .icon {
@@ -70,18 +70,19 @@
 .navigation ul li.active a .text {
   opacity: 1;
   transform: translateY(35px);
-  font-size: 20px !important;
+  font-size: 13px !important;
 }
 
 .navigation ul li a .circle {
   position: absolute;
   display: block;
-  top: 30%;
-  width: 50px;
-  height: 50px;
+  top: 16%;
+  width: 55px;
+  height: 55px;
   background: transparent;
   border-radius: 50%;
   border: 2px solid #ffffff;
+  background-color: rgb(22, 25, 25);
   transform: translateY(-40px) scale(0);
 }
 
@@ -89,6 +90,7 @@
   transition: 0.5s;
   transition-delay: 0.5s;
   transform: translateY(-40px) scale(1.1);
+  
 }
 
 .indicator {
@@ -97,8 +99,7 @@
   width: 70px;
   height: 70px;
   background-color: #ffffff;
-  border: 6px linear-gradient(117deg, rgb(250, 167, 0), rgb(0, 212, 250)) ;
-  overflow: hidden;
+  background-image: linear-gradient(117deg,rgb(106, 155, 163), rgb(0, 212, 163)) !important;  overflow: hidden;
   border-radius: 50%;
   display: flex;
   justify-content: center;
