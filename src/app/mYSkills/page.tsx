@@ -1,52 +1,56 @@
 import React from "react";
 import "./mySkills.css";
+import { TbBrandJavascript } from "react-icons/tb";
+import { FaHtml5,FaCss3,FaReact,FaSass,FaGitAlt,FaGithub,FaBootstrap} from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { SiTailwindcss,SiRedux } from "react-icons/si";
 
 const MySkill: React.FC = () => {
   return (
     <div className="mySkill">
       <ul className="skills-list group ">
         <li className="skill">
-          <i id="HTML" className="bx bxl-html5"></i>
+         <FaHtml5/>
           <p>HTML</p>
         </li>
         <li className="skill">
-          <i id="Css3" className="bx bxl-css3"></i>
+        <FaCss3 />
           <p>Css3</p>
         </li>
         <li className="skill">
-          <i id="Javascript" className="bx bxl-javascript"></i>
+        <TbBrandJavascript />
           <p>Javascript</p>
         </li>
         <li className="skill">
-          <i id="typescript" className="bx bxl-typescript"></i>
+          <SiTypescript/>
           <p>Typescript</p>
         </li>
         <li className="skill">
-          <i id="Sass" className="bx bxl-sass"></i>
+        <FaSass />
           <p>Sass</p>
         </li>
         <li className="skill">
-          <i id="React" className="bx bxl-react"></i>
+        <FaReact />
           <p>React.Js</p>
         </li>
         <li className="skill">
-          <i id="Bootstrap" className="bx bxl-bootstrap"></i>
+        <FaBootstrap />
           <p>Bootstrap</p>
         </li>
         <li className="skill">
-          <i id="Tailwind" className="bx bxl-tailwind-css"></i>
+          <SiTailwindcss/>
           <p>Tailwind-css</p>
         </li>
         <li className="skill">
-          <i id="Redux" className="bx bxl-redux"></i>
+<SiRedux/>
           <p>Redux</p>
         </li>
         <li className="skill">
-          <i id="Git" className="bx bxl-git"></i>
+        <FaGitAlt />
           <p>Git</p>
         </li>
         <li className="skill">
-          <i id="Github" className="bx bxl-github"></i>
+          <FaGithub/>
           <p>Github</p>
         </li>
       </ul>
