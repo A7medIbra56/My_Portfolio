@@ -7,6 +7,7 @@ import { GrProjects } from "react-icons/gr";
 import { GiSkills } from "react-icons/gi";
 import { IoPersonSharp } from "react-icons/io5";
 import { MdConnectWithoutContact } from "react-icons/md";
+import Change from "../change/change";
 
 interface MenuItem {
   to: string;
@@ -61,6 +62,9 @@ export default function Header() {
           ))}
           <div className="indicator"></div>
         </ul>
+      </div>
+      <div>
+        <Change re={inputName} />
       </div>
     </>
   );
