@@ -1,7 +1,12 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import "./Footer.css";
-import { FaGoogle, FaLinkedin, FaGithub, FaWhatsapp, FaLocationArrow } from "react-icons/fa";
+import {
+  FaGoogle,
+  FaLinkedin,
+  FaWhatsapp,
+  FaLocationArrow,
+} from "react-icons/fa";
 
 export default function Footer() {
   const [show, setShow] = useState<string | null>(null);
@@ -22,7 +27,7 @@ export default function Footer() {
 
   return (
     <div className="container footer position-fixed w-25">
-      <div className="col-md-12 main ">
+      <div className="col-md-12 main">
         <header>
           <div className="mt-5 d-flex justify-content-center align-items-center">
             <img src={`./img/ahmed2.png`} className="w-50 rounded-2" alt="..." />
@@ -63,8 +68,8 @@ export default function Footer() {
         <div className={`smallScr `}>
           <div className="made">
             <div className="madeItem d-flex">
-              <div className={'madeFa'}>
-                <FaLocationArrow/>
+              <div className={"madeFa"}>
+                <FaLocationArrow />
               </div>
               <div>
                 <a href="tel:#">
@@ -75,8 +80,8 @@ export default function Footer() {
           </div>
           <div className="made">
             <div className="madeItem d-flex">
-              <div className={'madeFa'}>
-                <FaGoogle/>
+              <div className={"madeFa"}>
+                <FaGoogle />
               </div>
               <div>
                 <a href="mailto:ahmedibrhiam512@gmail.com">
@@ -87,8 +92,8 @@ export default function Footer() {
           </div>
           <div className="made">
             <div className="madeItem d-flex">
-              <div className={'madeFa'}>
-                <FaLinkedin/>
+              <div className={"madeFa"}>
+                <FaLinkedin />
               </div>
               <div>
                 <a href="linkedin.com/in/ahmed-ibrahim-🇵🇸-18ab26220">
@@ -99,7 +104,7 @@ export default function Footer() {
           </div>
           <div className="made">
             <div className="madeItem d-flex">
-              <div className={'madeFa'}>
+              <div className={"madeFa"}>
                 <FaWhatsapp />
               </div>
               <div>
@@ -110,29 +115,29 @@ export default function Footer() {
             </div>
           </div>
           <div className="wrapper">
-        <ul>
-          <li className="github">
-            <a href="http://github.com/A7medIbra56">
-              <i className="fa-brands fa-github" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li className="linkedin">
-            <a href="http://linkedin.com/in/ahmed-ibrahim-18ab26220">
-              <i className="fa-brands fa-linkedin " aria-hidden="true"></i>
-            </a>
-          </li>
-          <li className="google">
-            <a href="mailto:ahmedibrhiam512@gmail.com">
-              <i className="fa-brands fa-google " aria-hidden="true"></i>
-            </a>
-          </li>
-          <li className="whatsapp">
-            <a href="https://wa.me/01158031289">
-              <i className="fa-brands fa-whatsapp " aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+            <ul>
+              <li className="github">
+                <a href="http://github.com/A7medIbra56">
+                  <i className="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li className="linkedin">
+                <a href="http://linkedin.com/in/ahmed-ibrahim-18ab26220">
+                  <i className="fa-brands fa-linkedin " aria-hidden="true"></i>
+                </a>
+              </li>
+              <li className="google">
+                <a href="mailto:ahmedibrhiam512@gmail.com">
+                  <i className="fa-brands fa-google " aria-hidden="true"></i>
+                </a>
+              </li>
+              <li className="whatsapp">
+                <a href="https://wa.me/01158031289">
+                  <i className="fa-brands fa-whatsapp " aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

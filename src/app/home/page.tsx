@@ -3,10 +3,10 @@ import "./Home.css";
 
 const MyPortfolio: React.FC = () => {
   return (
-    <div>
+    <>
       <div className=" home container-fluid">
-        <div className="">
-          <div className="col-md-12">
+        <div className="row">
+          <div className="col-md-6">
             <div className="mx-auto p-5">
               <h2 className="pt-3">welcome,</h2>
               <h2 className="pt-1">My Name Ahmed Ibrahim</h2>
@@ -24,14 +24,15 @@ const MyPortfolio: React.FC = () => {
                   </button>
                 </a>
               </div>
-
-              <div className="line-4">
-                <hr />
-              </div>
             </div>
           </div>
-          <div className="col-md-12 pb-5">
-          <div className="wrapper">
+          <div className="col-md-6">
+          <img src={`./img/Picsart.jpg`} className="" alt=".." />
+        </div>
+        </div>
+        
+      </div>
+      <div className="wrapper">
         <ul>
           <li className="github">
             <a href="http://github.com/A7medIbra56">
@@ -55,10 +56,7 @@ const MyPortfolio: React.FC = () => {
           </li>
         </ul>
       </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 

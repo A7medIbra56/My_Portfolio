@@ -1,7 +1,8 @@
-"use client"
+"use client";
+import React from "react";
 import "./Project.css";
 
-export default function Project() {
+const Project: React.FC = () => {
   return (
     <div>
       <div className="container cards position-relative">
@@ -25,8 +26,12 @@ export default function Project() {
             </div>
           </div>
           <div className="col-md-4 col-12 content content-1 rounded-3">
-          <button className="rounded-3">
-              <img className="w-100" src="./PhotoPorject/Screenshot (10).png" alt="000" />
+            <button className="rounded-3">
+              <img
+                className="w-100"
+                src="./PhotoPorject/Screenshot (10).png"
+                alt="000"
+              />
             </button>
             <h2>RAWG</h2>
             <p>HTML,css,javascript,react.js</p>
@@ -107,11 +112,33 @@ export default function Project() {
           </div>
         </div>
       </div>
-    
-
-       
-     
+      <div className="wrapper">
+        <ul>
+          <li className="github">
+            <a href="http://github.com/A7medIbra56">
+              <i className="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li className="linkedin">
+            <a href="http://linkedin.com/in/ahmed-ibrahim-18ab26220">
+              <i className="fa-brands fa-linkedin " aria-hidden="true"></i>
+            </a>
+          </li>
+          <li className="google">
+            <a href="mailto:ahmedibrhiam512@gmail.com">
+              <i className="fa-brands fa-google " aria-hidden="true"></i>
+            </a>
+          </li>
+          <li className="whatsapp">
+            <a href="https://wa.me/01158031289">
+              <i className="fa-brands fa-whatsapp " aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
-}
+};
+
+export default Project;
 
