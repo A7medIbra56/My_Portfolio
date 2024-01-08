@@ -1,5 +1,5 @@
 import React from 'react';
-import './Change.css';
+import './change.css';
 
 interface ChangeProps {
   re: string;
