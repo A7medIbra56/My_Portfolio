@@ -18,6 +18,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>MyPortfolio</title>
+    <link rel="icon" href="./img/ahmed2.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+      </head>
        <body className="container">
       <div className="row">
         <div className="col-12 col-md-4 col-lg-4">

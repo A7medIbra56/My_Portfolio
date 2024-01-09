@@ -3,8 +3,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Broken+Fax&family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Oswald&family=Rubik+Broken+Fax&family=Rubik+Doodle+Shadow&display=swap');*
+{
+  font-family: 'Lemon', serif;
 
+}
 body
 {
     background-image: linear-gradient(117deg, rgb(10, 200, 50), rgb(0, 100, 250)) !important;

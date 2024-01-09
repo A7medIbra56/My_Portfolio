@@ -16,7 +16,7 @@ const MyPortfolio: React.FC = () => {
               </h4>
               <div className="cv">
                 <a
-                  href="https://drive.google.com/file/d/1SqemhF5-_oDjep5YnGADVvWtcKeRFnSo/view?usp=drive_link"
+                  href="https://drive.google.com/drive/u/0/folders/13ZkXiCPfqDm9G6f49D1UU7uPMXEz0UvX"
                   download="Ahmed Ibrahim-cv.pdf"
                 >
                   <button className="download-button">

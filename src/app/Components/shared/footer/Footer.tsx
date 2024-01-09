@@ -26,7 +26,7 @@ export default function Footer() {
   }
 
   return (
-    <div className="container footer position-fixed w-25">
+    <div className="container footer ">
       <div className="col-md-12 main">
         <header>
           <div className="mt-5 d-flex justify-content-center align-items-center">

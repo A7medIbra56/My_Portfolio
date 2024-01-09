@@ -31,7 +31,6 @@ textarea{
     -webkit-background-clip: padding-box;
     background-clip: padding-box; 
     display:block;
-    font-family: 'Source Sans Pro', sans-serif;
     font-size:18px;
     color:#fff;
     padding-left:45px;
@@ -52,7 +51,6 @@ input {
     -webkit-background-clip: padding-box;
     background-clip: padding-box; 
     display:block;
-    font-family: 'Source Sans Pro', sans-serif;
     font-size:18px;
     color:#fff;
     padding-left:20px;
